@@ -1,0 +1,1 @@
+const likes_cout = document.getElementsByTagName("yt-formatted-string")

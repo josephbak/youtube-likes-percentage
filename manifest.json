@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "youtubeRatio",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+        "matches": ["https://www.youtube.com/watch?*"],
+        "js": ["Content.js"]
+        }
+    ],
+
+    "description": "Calculates and displays the percantage of likes of Youtube Videos.",
+    "icons": {
+        "16":"/images/percentage16-2.png",
+        "48":"/images/percentage48-2.png",
+        "128":"/images/percentage128-2.png"
+    },
+    "page_action": {
+        "default_icon": {
+        "16":"/images/percentage16-2.png",
+        "48":"/images/percentage48-2.png",
+        "128":"/images/percentage128-2.png"
+        }
+    }
+}
