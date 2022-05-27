@@ -4,26 +4,22 @@
     "version": "1.0.0",
     "content_scripts": [
         {
-        "matches": ["https://www.youtube.com/watch?*"],
-        "js": ["Content.js"]
+        "matches": [
+            "https://www.youtube.com/watch?*"
+        ],
+        "js": ["content.js"]
         }
     ],
     "description": "Calculates and displays the percantage of likes of Youtube Videos.",
     "action": {},
-    "background": {
-        "scripts": ["background.js"]
-    },
     "icons": {
         "16":"/images/percentage16-2.png",
         "48":"/images/percentage48-2.png",
         "128":"/images/percentage128-2.png"
     },
-    "page_action": {
-        "default_icon": {
-        "16":"/images/percentage16-2.png",
-        "48":"/images/percentage48-2.png",
-        "128":"/images/percentage128-2.png"
-        }
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Show Youtube likes ratio."
     },
     "permissions": ["activateTab"]
 }

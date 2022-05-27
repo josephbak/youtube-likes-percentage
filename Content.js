@@ -39,4 +39,10 @@ console.log(likes_perc)
 
 let rounded_likes_perc = Math.round((likes_perc + Number.EPSILON) * 100) / 100
 console.log(rounded_likes_perc)
+let rounded_likes_perc_string = (rounded_likes_perc).toString()
 
+// function myFunction() {
+//     document.getElementById("demo").innerHTML = "}
+function myFunction(){
+    document.getElementById("demo").innerHTML = "Paragraph.";
+}
